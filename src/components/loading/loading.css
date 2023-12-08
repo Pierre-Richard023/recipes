@@ -1,0 +1,81 @@
+#loading {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+
+}
+
+svg {
+    height: 200px;
+    width: 200px;
+}
+
+@media only screen and (min-width: 768px) {
+    svg {
+        height: 400px;
+        width: 400px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    svg {
+        height: 500px;
+        width: 500px;
+    }
+}
+
+#box__1 {
+    animation: animateOne 1s infinite;
+}
+
+#box__2 {
+    animation: animateTwo 1.2s infinite;
+}
+
+#box__3 {
+    animation: animateThree 1.2s infinite;
+}
+
+@keyframes animateOne {
+
+    33% {
+        opacity: .6;
+    }
+    66% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: .3;
+    }
+}
+
+@keyframes animateTwo {
+
+    33% {
+        opacity: 0.3;
+    }
+    66% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes animateThree {
+    33% {
+        opacity: 1;
+    }
+    66% {
+        opacity: .6;
+    }
+
+    100% {
+        opacity: .3;
+    }
+}
